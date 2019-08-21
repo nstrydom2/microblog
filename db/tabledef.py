@@ -9,7 +9,7 @@ Base = declarative_base()
 
 class Entry(Base):
     __tablename__ = 'entry'
-
+    
     id = Column(Integer, primary_key=True)
     timestamp = Column(TIMESTAMP)
     content = Column(String)
